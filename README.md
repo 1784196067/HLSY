@@ -7,11 +7,15 @@
 2.1用例图：
 ![用例图](https://github.com/1784196067/HLSY/blob/master/images/ylt.png)
 
-***
+
 
 2.2用例描述：
 (1)申办活动：
+
+***
+
 ![申办活动](https://github.com/1784196067/HLSY/blob/master/images/ylms1.JPG)
+
 (2)审核活动：
 ![审核活动](https://github.com/1784196067/HLSY/blob/master/images/ylms2.JPG)
 
