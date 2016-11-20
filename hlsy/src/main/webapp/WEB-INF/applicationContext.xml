@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	<!-- 定义数据源Bean，使用C3P0数据源实现，并注入数据源的必要信息 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close"
+		p:driverClass="com.mysql.jdbc.Driver"
+		p:jdbcUrl="jdbc:mysql://localhost/hlsy"
+		p:user="root"
+		p:password="123456"
+		p:maxPoolSize="40"
+		p:minPoolSize="2"
+		p:initialPoolSize="2"
+		p:maxIdleTime="30"/>
+	<!-- 定义Hibernate的SessionFactory，SessionFactory需要依赖数据源，注入dataSource -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" p:dataSource-ref="dataSource">
+		<!-- mappingResources用来列出全部映射文件 -->
+		<property name="annotatedClasses">
+			<list>
+				<!-- 以下用来列出所有的PO类-->
+				<value>hlsy.domain.Activity</value>
+				<value>hlsy.domain.Apply</value>
+				<value>hlsy.domain.Category</value>
+				<value>hlsy.domain.Club</value>
+				<value>hlsy.domain.Teacher</value>
+				<value>hlsy.domain.Suggestion</value>
+			</list>
+		</property>
+		<!-- 定义Hibernate SessionFactory的属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<!-- 指定Hibernate的连接方言 -->
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+				<!--是否根据Hiberante映射创建数据表 -->
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				
+				<prop key="hibernate.query.substitutions">true 1, false 0</prop>			
+			</props>
+		</property>
+	</bean>
+	<!-- 定义Service组件，并将DAO组件注入Service组件 -->
+	
+	<bean id="teacherService" class="hlsy.service.impl.TeacherServiceImpl" p:teacherDao-ref="teacherDao"/>		
+    <bean id="teacherDao" class="hlsy.dao.impl.TeacherDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+    <bean id="clubService" class="hlsy.service.impl.ClubServiceImpl" p:clubDao-ref="clubDao"/>		
+    <bean id="clubDao" class="hlsy.dao.impl.ClubDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+    <bean id="activityService" class="hlsy.service.impl.ActivityServiceImpl" p:activityDao-ref="activityDao"/>		
+    <bean id="activityDao" class="hlsy.dao.impl.ActivityDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+    <bean id="applyService" class="hlsy.service.impl.ApplyServiceImpl" p:applyDao-ref="applyDao"/>		
+    <bean id="applyDao" class="hlsy.dao.impl.ApplyDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+    <bean id="suggestionService" class="hlsy.service.impl.SuggestionServiceImpl" p:suggestionDao-ref="suggestionDao"/>		
+    <bean id="suggestionDao" class="hlsy.dao.impl.SuggestionDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+    <bean id="categoryService" class="hlsy.service.impl.CategoryServiceImpl" p:categoryDao-ref="categoryDao"/>		
+    <bean id="categoryDao" class="hlsy.dao.impl.CategoryDaoHibernate"  p:sessionFactory-ref="sessionFactory"/>
+    
+	<!-- 配置Hibernate的局部事务管理器，使用HibernateTransactionManager类 -->
+	<!-- 该类是PlatformTransactionManager接口针对采用Hibernate的特定实现类 -->
+	<!-- 配置HibernateTransactionManager需依赖注入SessionFactory -->
+	<bean id="transactionManager" 
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+		p:sessionFactory-ref="sessionFactory"/>
+
+<!-- 配置事务增强处理Bean,指定事务管理器 -->
+<tx:advice id="txAdvice" 
+	transaction-manager="transactionManager">
+	<!-- 用于配置详细的事务定义 -->
+	<tx:attributes>
+		<!-- 所有以'get'开头的方法是read-only的 -->
+		<tx:method name="get*" read-only="true"/>
+		<!-- 其他方法使用默认的事务设置，指定超时时长为5秒 -->
+		<tx:method name="*" isolation="DEFAULT"
+			propagation="REQUIRED" timeout="10"/>
+	</tx:attributes>
+</tx:advice>
+<!-- AOP配置的元素 -->
+<aop:config>
+	<!-- 配置一个切入点 -->
+	<aop:pointcut id="myPointcut" expression="execution(* cn.edu.cumt.ec.service.*.*(..))"/>
+	<!-- 指定在myPointcut切入点应用txAdvice事务增强处理 -->
+	<aop:advisor advice-ref="txAdvice" 
+		pointcut-ref="myPointcut"/>
+</aop:config>
+<aop:aspectj-autoproxy proxy-target-class="true"/> 
+
+</beans>
