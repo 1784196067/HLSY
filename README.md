@@ -6,6 +6,7 @@
 2.用例模型：
 2.1用例图：
 ![用例图](https://github.com/1784196067/HLSY/blob/master/images/ylt.png)
+***
 2.2用例描述：
 (1)申办活动：
 ![申办活动](https://github.com/1784196067/HLSY/blob/master/images/ylms1.JPG)
