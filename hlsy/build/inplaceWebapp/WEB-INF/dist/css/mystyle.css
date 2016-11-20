@@ -1,0 +1,90 @@
+//body{background-color:rgb(192,192,192);}
+.outer{background:url(../../images/login10.jpg) no-repeat;background-size:85% auto;-webkit-background-size:cover;margin:80px auto;width:85%;height:480px;}
+.container{width:85%;height:auto;padding-top:30px;}
+.outer form{width:300px;height:300px;float:right;margin:80px;}
+.container .btn{float:left;width:100%}
+.container .checkbox{margin-left:20px;margin-bottom:16px;}
+.container a{margin:15px;float:right;}
+.outer h4{margin-left:20px;margin-top:20px;float:left}
+.font1{-webkit-box-reflect:below 10px -webkit-linear-gradient(left,#FF0000,#00FFFF);box-reflect:below 10px linear-gradient(left,#FF0000,#00FFFF);color:white}
+.font2{text-shadow:2px 2px 4px #00ffff;color:rgb(0,255,64);font-size:40px}
+.container_1{border:solid 1px gray;margin:30px auto;width:50%;height:auto;padding:20px;text-align:center;display:block;background-color:white;border-radius:5px;box-shadow:5px 5px 5px 7px;}
+.btn_r{margin:20px;float:right;}
+.btn_l{margin:20px;float:left;}
+.btn_c{margin:20px auto;}
+.container_2,.container_3,.container_4{display:block;border:solid 1px gray;margin:30px auto;width:50%;height:auto;padding:20px;text-align:center;display:none;background-color:white;border-radius:5px;box-shadow:5px 5px 5px 7px;}
+.container_1 .help-block{margin-bottom:-5px;float:left;}
+.test_tag{font-size:12px;-webkit-transform-origin-x: 0;-webkit-transform: scale(0.5833333333333334);}
+.main{width:85%;height:auto;margin:0 auto;background-color:white;text-align:center;}
+.main .navbar{height:60px;text-align:center;margin-bottom:0px}
+.control{display:inline;width:40%;border:1px solid rgb(37,197,80);margin-top:20px;}
+.main form button{border:1px solid rgb(150,150,50);width:80px;background-color:rgb(46,131,63);}
+.btn-group-vertical{margin-left:50px;float:left;width:135px}
+.btn-lg{width:135px;border-radius:0px;}
+.show_picture{height:496px;width:1300px;border:1px solid rgb(37,197,80);float:left;margin-left:200px;margin-bottom:20px;position:absolute;box-shadow:#999 5px 5px 5px;}
+.goods{width:90%;clear:both;margin:20px auto;text-align:center;background-color:white}
+.bottom{margin-bottom:15px;}
+.br{height:10px;clear:both;}
+hr{border:1px solid rgb(37,197,80);margin-top:20px}
+.form-horizontal{margin-top:20px;}
+.divFrame{width:400px;margin:20px;height:auto;}
+.divFrame .divContent{padding:8px;line-height:1.6em;}
+.divFrame .divContent img{border:1px solid black;height:400px;width:380px;}
+.description{width:40%;height:auto;margin:20px;}
+.description .title{padding:5px;font-weight:bold;font-size:25px;}
+.description .er{border:0px dotted white;text-align:left;font-size:12px;}
+.main_2 .col-md-6{position:static;}
+table label{border:1px solid gray;width:25px;height:25px;text-align:center;line-height:25px;}
+table  input[type=radio]{visibility:hidden;}
+#substract,#add,#cart_substract,#cart_add{border:1px solid gray;width:25px;height:25px;text-align:center;}
+#substract~input,#cart_substract~input,#cart_goods_selected_money,#cart_goods_selected_total{width:35px;height:25px;text-align:center;line-height:25px;background-color:white;}
+.description .btn{width:150px;height:40px;margin:0px auto;}
+.delete{text-decoration:line-through;}
+.main_2{width:85%;height:auto;margin:0px auto;background-color:white;padding:50px;padding-top:0px;}
+#collect,#saying_1{border:0px solid white;background-color:white;font-size:15px;}
+#remove_to_collection,#delete_from_collection{border:0px solid white;background-color:white;font-size:12px;}
+.jqZoomPup{width:85px;height:85px;}
+.color{font-size:13px;color:orange}
+//table .glyphicon-star{position:absolute;}
+.none{display:none;}
+body{position:relative;}
+.main_1{width:80%;height:1000px;margin:20px auto;background-color:white;text-align:center;border:1px solid black;padding:50px;
+padding-top:15px;position:relative;}
+.main_1 li{width:75%;min-height:80px;margin:20px auto;padding:10px;}
+.media-heading{float:left;clear:both;}
+.media-heading~div{clear:both;text-align:left;text-indent:12px;margin-top:35px;}
+.main_1 textarea{width:75%;min-height:80px;margin:0px auto;margin-top:35px;margin-bottom:12px;padding:10px;border:1px solid green;}
+.main_1 .media-list{height:650px;border:1px solid black;overflow:scroll;background:url(../../images/ha.png) no-repeat;background-size:contain;-webkit-background-size:contain;}
+.media:first-child{margin-top:20px;}
+.main_1 .btn-group{position:absolute;left:175px;margin-bottom:15px;}
+.main_1 .form-group input{margin-right:122.156px;margin-top:0px;}
+.vertical{width:200px;margin-top:35px;clear:none;float:left;}
+.right{width:800.09px;margin-top:35px;margin-left:0px;height:600px;float:left;padding:15px;overflow:scroll;border:1px solid gray;}
+.right .glyphicon-pencil{color:cyan;}
+.right .glyphicon-remove{color:red;}
+.right .glyphicon-refresh{color:green;}
+.right hr{border:1px dotted gray;}
+#order,#saying{display:none;}
+iframe{width:1000.09px;height:700px;margin-top:0px;}
+.right_1{width:1000.09px;margin-top:-15px;margin-left:20px;border:1px solid black;height:700px;float:left;overflow:scroll;}
+.main_3{width:100%;height:auto;margin:0px auto;background-color:white;padding:50px;padding-top:0px;}
+.picture{width:50px;height:55px;padding:5px;}
+.col-md-offset-2{margin-left:30px;}
+#total,#cart_total{border:1px solid white;width:50px;background-color:white;}
+//.easyui-navpanel{width:200px;height:600px;}
+.panel-noscroll{width:200px;height:600px;margin-left:8px;margin-top:35px;border:1px solid gray;float:left;}
+//.vertical{margin-top:0px;}
+.main_4{width:85%;height:1000px;margin:20px auto;background-color:white;text-align:center;border:1px solid white;padding:50px;
+padding-top:15px;position:relative;}
+.left{margin-left:100px}
+.main_4 .shopping_img{width:87px;height:90px;padding:0px;margin-bottom:16px;}
+.words{margin-top:16px;margin-bottom:16px;}
+.main_4 .panel-default:first{border:1px solid white;}
+tfoot .tfoot{position:fixed;width:78%;background-color:white;}
+a.btn:link{text-decoration:none;color:#000;}
+a.btn:link{text-decoration:none;color:orange;}
+a.btn:hover{text-decoration:none;color:orange;}
+a.btn:active{text-decoration:none;color:black;}
+.main_4 a{color:#000;}
+.rt{float:right;}
+.white{border:1px solid white;background-color:white;padding:0px 12px;}
