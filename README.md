@@ -18,34 +18,29 @@
 ![用例图](https://github.com/1784196067/HLSY/blob/master/images/ylt.png)
 
 
-
 2.2用例描述：
 
 
 (1)申办活动：
 
 
-![申办活动](https://github.com/1784196067/HLSY/blob/master/images/ylms1.JPG)
+![申办活动](https://github.com/1784196067/HLSY/blob/master/images/ylms1.png)
 
 
 (2)审核活动：
 
 
-![审核活动](https://github.com/1784196067/HLSY/blob/master/images/ylms2.JPG)
+![审核活动](https://github.com/1784196067/HLSY/blob/master/images/ylms2.png)
+
+
+3.可行性分析：
+
+
+![审核活动](https://github.com/1784196067/HLSY/blob/master/images/kxxfx.png)
 
 ***
 
-二、系统逻辑模型：
-
-
-数据建模：
-
-
-![数据库](https://github.com/1784196067/HLSY/blob/master/images/sjk.jpg)
-
-***
-
-三、系统设计：
+二、系统设计：
 
 
 数据库设计：
@@ -55,7 +50,7 @@
 
 ***
 
-四、功能模块：
+三、功能模块：
 
 
 1.完成社团申办活动页面：
