@@ -102,7 +102,6 @@
 ![数据建模](https://github.com/1784196067/HLSY/blob/master/images/xtyx.JPG)
 
 
-
 ![数据建模](https://github.com/1784196067/HLSY/blob/master/images/xtyx2.JPG)
 
 
@@ -132,10 +131,14 @@
 
 
 （1）完成登录页面：
+
+
 ![登录页面4](https://github.com/1784196067/HLSY/blob/master/images/login.jpg)
 
 
 （2）完成注册页面：
+
+
 ![注册页面5](https://github.com/1784196067/HLSY/blob/master/images/register.png)
 
 
@@ -153,10 +156,14 @@
 
 
 （2）登录失败，未注册：
+
+
 ![页面1](https://github.com/1784196067/HLSY/blob/master/images/bcz.jpg)
 
 
 （3）登录用户名或密码错误：
+
+
 ![页面1](https://github.com/1784196067/HLSY/blob/master/images/error.jpg)
 
 
@@ -164,6 +171,8 @@
 
 
 （1）注册成功，转入登录界面：
+
+
 ![登录页面4](https://github.com/1784196067/HLSY/blob/master/images/login.jpg)
 
 
