@@ -80,7 +80,7 @@
 
 
 1.业务流程分析：
-![业务流程分析](https://github.com/1784196067/HLSY/blob/master/images/ywlc.png)
+![业务流程分析](https://github.com/1784196067/HLSY/blob/master/images/lct.png)
 
 ***
 
