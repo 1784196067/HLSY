@@ -1,5 +1,5 @@
 # HLSY
-第一周进度报告：
+# 第一周进度报告：
 
 ***
 
@@ -50,24 +50,28 @@
 
 ***
 
-三、功能模块：
+三、功能：
 
 
-1.完成社团申办活动页面：
+1.界面设计：
+
+
+（1）完成社团申办活动页面：
 ![页面1](https://github.com/1784196067/HLSY/blob/master/images/stsbhd1.png)
 
 
 ![页面2](https://github.com/1784196067/HLSY/blob/master/images/stsbhd2.jpg)
 
 
-2.完成教师查看项目页面：
+（2）完成教师查看项目页面：
 ![页面3](https://github.com/1784196067/HLSY/blob/master/images/jsym.png)
 
 
 ***
 
 
-第二周进度报告：
+
+# 第二周进度报告：
 
 ***
 
@@ -98,6 +102,7 @@
 ![数据建模](https://github.com/1784196067/HLSY/blob/master/images/xtyx.JPG)
 
 
+
 ![数据建模](https://github.com/1784196067/HLSY/blob/master/images/xtyx2.JPG)
 
 
@@ -115,9 +120,74 @@
 2.输入输出设计：
 
 
-![输入输出](https://github.com/1784196067/HLSY/blob/master/images/srsc.JPG)
+![输入输出](https://github.com/1784196067/HLSY/blob/master/images/input output.JPG)
 
 
 ***
 
-四、功能模块：
+四、功能：
+
+
+1.界面设计：
+
+
+（1）完成登录页面：
+![登录页面4](https://github.com/1784196067/HLSY/blob/master/images/login.jpg)
+
+
+（2）完成注册页面：
+![注册页面5](https://github.com/1784196067/HLSY/blob/master/images/register.png)
+
+
+2.功能实现：
+
+
+2.1 登录：
+
+
+（1）登录成功，进入社团或教师界面：
+![页面1](https://github.com/1784196067/HLSY/blob/master/images/stsbhd1.png)
+
+
+![页面3](https://github.com/1784196067/HLSY/blob/master/images/jsym.png)
+
+
+（2）登录失败，未注册：
+![页面1](https://github.com/1784196067/HLSY/blob/master/images/bcz.jpg)
+
+
+（3）登录用户名或密码错误：
+![页面1](https://github.com/1784196067/HLSY/blob/master/images/error.jpg)
+
+
+2.2 注册：
+
+
+（1）注册成功，转入登录界面：
+![登录页面4](https://github.com/1784196067/HLSY/blob/master/images/login.jpg)
+
+
+（2）注册失败，邮箱已被注册：
+![登录页面5](https://github.com/1784196067/HLSY/blob/master/images/yzc.png)
+
+
+2.3 社团提交活动申请：
+
+
+（1）社团填写申办活动申请：
+![页面2](https://github.com/1784196067/HLSY/blob/master/images/stsbhd2.jpg)
+
+
+（2）文件提交中：
+![页面2](https://github.com/1784196067/HLSY/blob/master/images/tjz.jpg)
+
+
+（3）申请提交成功，老师收到邮件提醒：
+![页面2](https://github.com/1784196067/HLSY/blob/master/images/email.png)
+
+2.4 老师审批申请：
+
+
+审批意见通过邮件发送给社团：
+![页面3](https://github.com/1784196067/HLSY/blob/master/images/email2.png)
+
