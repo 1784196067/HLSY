@@ -80,7 +80,10 @@
 
 
 1.业务流程分析：
+
+
 ![业务流程分析](https://github.com/1784196067/HLSY/blob/master/images/lct.png)
+
 
 ***
 
@@ -192,11 +195,6 @@
 
 
 （3）申请提交成功，老师收到邮件提醒：
-![页面2](https://github.com/1784196067/HLSY/blob/master/images/email.png)
+![页面2](https://github.com/1784196067/HLSY/blob/master/images/email.jpg)
 
-2.4 老师审批申请：
-
-
-审批意见通过邮件发送给社团：
-![页面3](https://github.com/1784196067/HLSY/blob/master/images/email2.png)
 
