@@ -287,12 +287,6 @@
 ![页面](https://github.com/1784196067/HLSY/blob/master/images/glst.png)
 
 
-（3）完成教师账号管理页面：
-
-
-![页面](https://github.com/1784196067/HLSY/blob/master/images/jsxgzl.png)
-
-
 2.功能实现：
 
 
