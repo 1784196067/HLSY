@@ -258,11 +258,19 @@
 
 ![页面](https://github.com/1784196067/HLSY/blob/master/images/hdxq.png)
 
+（3）完成社团收到其他社团发起活动的消息页面：
 
-（3）完成社团账号管理页面：
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/wdxx.png)
 
 
-![页面](https://github.com/1784196067/HLSY/blob/master/images/qgzl.png)
+![页面](https://github.com/1784196067/HLSY/blob/master/images/wdxx2.png)
+
+
+（4）完成社团账号管理页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/xgzl.jpg)
 
 
 1.2 教师：
@@ -270,7 +278,7 @@
 （1）修改教师查看活动页面：
 
 
-![页面](https://github.com/1784196067/HLSY/blob/master/images/jsck.png)
+![页面](https://github.com/1784196067/HLSY/blob/master/images/hdsh.png)
 
 
 （2）完成教师管理社团页面：
@@ -288,15 +296,25 @@
 2.功能实现：
 
 
-2.1 教师审核后以邮件的形式提醒社团查看意见及结果：
+2.1 教师对待审核的活动进行审核，并提出意见：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/hdsh2.png)
+
+
+2.2 教师审核后以邮件的形式提醒社团查看意见及结果：
 
 
 ![页面](https://github.com/1784196067/HLSY/blob/master/images/jsemail.png)
 
 
-2.2 教师管理社团，实现添加和删除社团功能：
+2.3 教师管理社团，实现添加和删除社团功能：
 
 
-![页面](https://github.com/1784196067/HLSY/blob/master/images/jsglst.png)
+![页面](https://github.com/1784196067/HLSY/blob/master/images/glst2.png)
 
 
+2.4 社团进行新增、删除活动：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/hdxq.png)
