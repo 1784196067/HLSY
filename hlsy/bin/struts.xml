@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="conststruts.devMode" value="true"/>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.action.excludePattern" value="/servlet/.*,/uploadify/.*"/>
+	 <constant name="struts.multipart.maxSize" value="400000000" />	
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+	
+   <package name="admin" namespace="/teacher" extends="json-default">
+		<action name="manager" class="hlsy.action.ManagerAction" method="manager">
+			 	<result name="success">/WEB-INF/content/clubs.jsp</result>		
+		</action>
+	
+	<action name="remove" class="hlsy.action.ManagerAction" method="remove">
+				<result name="success">/WEB-INF/content/clubs.jsp</result>
+	</action>
+	
+	<action name="get_*" class="hlsy.action.ManagerAction" method="{1}">
+				<result name="success">/WEB-INF/content/clubs.jsp</result>
+	</action>
+	
+	<action name="activityAction_*" class="hlsy.action.CheckAction" method="{1}">
+		<result name="jsonArray" type="json">
+				<!-- 为该Result指定参数 -->
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+				<!-- 设置只序列Action的map属性 -->
+				<param name="root">jsonArray</param>
+		</result>
+	</action>
+	
+	<action name="*" class="hlsy.action.ManagerAction" method="{1}">
+		<result type="stream">
+			<param name="contentType">text/html</param>
+			<param name="inputName">result</param>
+		</result>
+	</action>	
+   </package>
+	
+	<package  name="fe" extends="struts-default" >
+	
+	 <action name="download" class="hlsy.action.ActivityAction">  
+				<result type="stream">
+					<param name="contentType">application/octet-stream</param>
+					<param name="inputName">inputStream</param>
+					<param name="contentDisposition">attachment;filename="${downloadFileName}"</param>
+					<param name="bufferSize">8192</param>
+				</result>
+	 </action>
+	  
+	 <action name="suggest" class="hlsy.action.TeacherAction">
+	 	 <param name="data1">批准</param>
+	 	<result type="stream">	 	  
+	 	  <param name="contentType">text/html</param>
+	 	  <param name="inputName">result</param>
+	 	</result>
+	 </action>
+	
+	  <action name="ajax_*" class="hlsy.action.ActivityAction" method="{1}">  
+		<result type="stream">	 	  
+	 	  <param name="contentType">text/html</param>
+	 	  <param name="inputName">result</param>
+	 	</result>
+	 </action>
+	 
+	 <action name="all_*" class="hlsy.action.{1}Action" >
+			<result type="stream">
+				<!-- 指定下载文件的文件类型 -->
+				<param name="contentType">text/html</param>
+				<!-- 指定由getResult()方法返回输出结果的InputStream -->
+				<param name="inputName">result</param>
+			</result>
+	</action>
+	
+	<action name="Teacher_*" class="hlsy.action.TeacherAction" method="{1}">
+			<result>/WEB-INF/content/{1}.jsp</result>
+	</action>
+	
+	<action name="loginOut" class="hlsy.action.LoginAction" method="loginOut">
+			<result>/WEB-INF/content/login.jsp</result>
+	</action>
+	
+	<action name="register" class="hlsy.action.RegisterAction">
+	 	<result type="stream">
+				<!-- 指定下载文件的文件类型 -->
+				<param name="contentType">text/html</param>
+				<!-- 指定由getResult()方法返回输出结果的InputStream -->
+				<param name="inputName">result</param>
+		</result>
+	 </action>
+	 
+	 <action name="Activity_*" class="hlsy.action.ActivityAction" method="{1}">
+	 	<result>/WEB-INF/content/{1}.jsp</result>
+	 </action>
+	 
+	 <action name="Club_*" class="hlsy.action.ClubAction" method="{1}">
+	 	<result>/WEB-INF/content/{1}.jsp</result>
+	 </action>
+	 
+	 <action name="*">
+			<result>/WEB-INF/content/{1}.jsp</result>
+	</action>
+   </package>
+   
+
+</struts>
