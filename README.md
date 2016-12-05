@@ -198,3 +198,105 @@
 ![页面2](https://github.com/1784196067/HLSY/blob/master/images/email.jpg)
 
 
+***
+
+
+
+# 第三周进度报告：
+
+***
+
+一、系统逻辑模型：
+
+
+过程建模：
+
+
+![过程建模](https://github.com/1784196067/HLSY/blob/master/images/process modeling.JPG)
+
+
+
+![过程建模](https://github.com/1784196067/HLSY/blob/master/images/process modeling2.JPG)
+
+
+
+![过程建模](https://github.com/1784196067/HLSY/blob/master/images/process modeling3.JPG)
+
+
+***
+
+二、系统设计：
+
+
+功能模块设计：
+
+
+![功能模块设计](https://github.com/1784196067/HLSY/blob/master/images/functional module.JPG)
+
+
+***
+
+三、功能：
+
+
+1.界面设计：
+
+
+1.1 社团：
+
+（1）完成社团发起活动页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/fqhd.png)
+
+
+（2）完成社团查看活动及活动详情页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/wdhd.png)
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/hdxq.png)
+
+
+（3）完成社团账号管理页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/qgzl.png)
+
+
+1.2 教师：
+
+（1）修改教师查看活动页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/jsck.png)
+
+
+（2）完成教师管理社团页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/glst.png)
+
+
+（3）完成教师账号管理页面：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/jsxgzl.png)
+
+
+2.功能实现：
+
+
+2.1 教师审核后以邮件的形式提醒社团查看意见及结果：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/jsemail.png)
+
+
+2.2 教师管理社团，实现添加和删除社团功能：
+
+
+![页面](https://github.com/1784196067/HLSY/blob/master/images/jsglst.png)
+
+
